@@ -12,7 +12,7 @@ app.set("port", (process.env.PORT || 8000));
 
 app.get("/students", function(req,res){
   res.send(students);
-})
+});
 
 app.get("/*", function(req, res){
   var file = req.params[0] || "/views/index.html";
